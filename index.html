@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaaish Data Papa | Isource Enterprise</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #0d6efd, #003c8f);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1200') center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+.section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container {
+    max-width: 450px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.momo-box {
+    background: #fff3cd;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ff006a, #c40052);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.flyers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.flyer-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.flyer-card:hover {
+    transform: translateY(-5px);
+}
+
+.flyer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.flyer-card div {
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Kaaish Data Papa</h1>
+    <p>Powered by Isource Enterprise</p>
+</header>
+
+<div class="hero">
+    <h2>THE PERFECT OFFERS FOR YOU</h2>
+    <p>Instant delivery after confirmation</p>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h3>Buy Data Bundle</h3>
+
+        <div class="momo-box">
+            Send Payment To:<br>
+            <strong>0205935021</strong><br>
+            Name: Isource Enterprise<br>
+            Network: Telecel Pay
+        </div>
+
+        <select id="bundle">
+            <option value="1GB - GHS5">1GB - GHS5</option>
+            <option value="2GB - GHS10">2GB - GHS10</option>
+            <option value="5GB - GHS20">5GB - GHS23</option>
+            <option value="10GB - GHS35">10GB - GHS45</option>
+        </select>
+
+        <input type="text" id="customerNumber" placeholder="Your Phone Number">
+        <input type="text" id="transactionId" placeholder="Transaction ID">
+
+        <button onclick="sendWhatsApp()">CONTINUE</button>
+    </div>
+</div>
+
+<div class="section">
+    <h3 style="text-align:center; margin-bottom:20px;">Our Promotions</h3>
+    <div class="flyers">
+        <div class="flyer-card">
+            <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=1000" alt="Promo 1">
+            <div>Weekend Bonus Data</div>
+        </div>
+        <div class="flyer-card">
+            <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?q=
